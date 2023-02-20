@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto-FactoriaF5</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>
+            Listado de joyas
+
+        </h1>
+    </header>
+    <main>
+        <ul class="list js-list">
+            <film-card img="./img/colgante.jpg" title="Alianzas de boda" collection="ORO 24 kilates"
+                description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero omnis eos iure quibusdam labore excepturi, amet aliquid modi quam. Sapiente dolorum dolores consequuntur ipsum quis quibusdam voluptates porro id perspiciatis?"
+                price="100 EUROS"></film-card>
+            <film-card img="./img/anillos2.jpg" title="Alianzas de boda" collection="ORO 24 kilates"
+                description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero omnis eos iure quibusdam labore excepturi, amet aliquid modi quam. Sapiente dolorum dolores consequuntur ipsum quis quibusdam voluptates porro id perspiciatis?"
+                price="200 EUROS"></film-card>
+            <film-card img="./img/anillo3.jpg" title="Alianzas de boda" collection="ORO 24 kilates"
+                description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero omnis eos iure quibusdam labore excepturi, amet aliquid modi quam. Sapiente dolorum dolores consequuntur ipsum quis quibusdam voluptates porro id perspiciatis?"
+                price="300 EUROS"></film-card>
+            <film-card img="./img/anillos2.jpg" title="Alianzas de boda" collection="ORO 24 kilates"
+                description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero omnis eos iure quibusdam labore excepturi, amet aliquid modi quam. Sapiente dolorum dolores consequuntur ipsum quis quibusdam voluptates porro id perspiciatis?"
+                price="400 EUROS"></film-card>
+        </ul>
+
+        <section class="new-form  js-new-form">
+            <h2 class="title">¿Agregamos una nueva joya?</h2>
+            <form class="form">
+                <input class="input js-input-photo" type="text" placeholder="Url de la foto" required />
+                <input class="input js-input-name" type="text" placeholder="Nombre" required />
+
+                <input class="input js-input-desc" type="text" placeholder="Descripción" required />
+                <input class="input js-input-price" type="text" placeholder="Precio" />
+                <label class=""></label>
+                <button class="button js-btn-add">Añadir</button>
+                <button class="button-cancel js-btn-cancel">Cancelar</button>
+            </form>
+        </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>
