@@ -3,15 +3,27 @@ import "./components/film-card.js";
 
 const addButton = document.querySelector(".js-btn-add");
 const listElement = document.querySelector(".js-list");
+const inputDesc = document.querySelector(".js-input-desc");
+    const inputPhoto = document.querySelector(".js-input-photo");
+    const inputName = document.querySelector(".js-input-name");
+    const inputPrice = document.querySelector(".js-input-price");
+
 
 function handleAdd (ev) {
+ 
     ev.preventDefault();
     paintNew();
 };
 function paintNew () {
-    listElement.innerHTML += `<film-card img="./img/anillos2.jpg" title="Alianzas de boda" collection="ORO 24 kilates"
-    description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero omnis eos iure quibusdam labore excepturi, amet aliquid modi quam. Sapiente dolorum dolores consequuntur ipsum quis quibusdam voluptates porro id perspiciatis?"
-    price="200 EUROS"></film-card>`
+    debugger
+    const valueDesc = inputDesc.value;
+    const valuePhoto = inputPhoto.value;
+    const valueName = inputName.value;
+    const valuePrice = inputPrice.value;
+    console.log(inputName);
+    listElement.innerHTML += `<film-card img="${valuePhoto}" title="${valueName}" collection="ORO 24 kilates"
+    description="${valueDesc}"
+    price="${valuePrice}"></film-card>`
 }
 
 
