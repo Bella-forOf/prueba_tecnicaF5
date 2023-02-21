@@ -70,14 +70,15 @@ class jewelCard extends HTMLElement {
             display: flex;
             justify-content: center;
             width: 50%;
-            height: 100%;
-            background-color: var(--primary-background)
+          
+            background-color: white;
         }
         
         
         .container .imgBox img {
            
-            
+      
+        
           
             
         }
@@ -122,16 +123,19 @@ class jewelCard extends HTMLElement {
             }
             .container .imgBox {
                
-                width: 100%;
+                width: 80%;
                 box-sizing: border-box;
                 height: auto;
                 text-align: center;
             }
             .container .imgBox img {
                 left: initial;
-                width: 100%;
-                height: auto;
-           
+                width: 200px;
+                heigt:200px;
+               
+                img {
+                  width: 60px;
+                }
             }
             .container .details {
                 width: 100%;
@@ -141,6 +145,7 @@ class jewelCard extends HTMLElement {
             .container .details p {
                 max-width: 100%;
                 margin-left: 0;
+                
             }
         }
         </style>
