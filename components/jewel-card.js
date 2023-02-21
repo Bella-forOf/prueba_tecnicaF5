@@ -77,7 +77,7 @@ class jewelCard extends HTMLElement {
         
         .container .imgBox img {
            
-      
+         
         
           
             
@@ -130,12 +130,10 @@ class jewelCard extends HTMLElement {
             }
             .container .imgBox img {
                 left: initial;
-                width: 200px;
-                heigt:200px;
+                
                
-                img {
-                  width: 60px;
-                }
+               
+                
             }
             .container .details {
                 width: 100%;
