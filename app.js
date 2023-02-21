@@ -7,6 +7,7 @@ const inputDesc = document.querySelector(".js-input-desc");
     const inputPhoto = document.querySelector(".js-input-photo");
     const inputName = document.querySelector(".js-input-name");
     const inputPrice = document.querySelector(".js-input-price");
+const container = document.querySelector(".js-container")
 
 
 function handleAdd (ev) {
@@ -28,3 +29,14 @@ function paintNew () {
 
 
 addButton.addEventListener("click", handleAdd);
+
+function handleRemove (ev){
+    ev.preventDefault();
+    removeNew();
+}
+
+function removeNew (ev) {
+    ev.currentTarget.classList.toggle('selected');
+
+}
+container.addEventListener("click", handleRemove);

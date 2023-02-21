@@ -26,7 +26,7 @@ class filmCard extends HTMLElement {
     getTemplate() {
       const template = document.createElement("template");
       template.innerHTML = `
-        <main class="container">
+        <main class="container js-container">
           <section class="imgBox">
             <img src="${
               this.img
@@ -154,4 +154,3 @@ class filmCard extends HTMLElement {
     }
   }
   customElements.define("film-card", filmCard);
-  
