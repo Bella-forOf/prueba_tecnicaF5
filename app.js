@@ -1,5 +1,5 @@
 
-import "./components/film-card.js";
+import "./components/jewel-card.js";
 
 const addButton = document.querySelector(".js-btn-add");
 const listElement = document.querySelector(".js-list");
@@ -16,27 +16,18 @@ function handleAdd (ev) {
     paintNew();
 };
 function paintNew () {
-    debugger
+    
     const valueDesc = inputDesc.value;
     const valuePhoto = inputPhoto.value;
     const valueName = inputName.value;
     const valuePrice = inputPrice.value;
     console.log(inputName);
-    listElement.innerHTML += `<film-card img="${valuePhoto}" title="${valueName}" collection="ORO 24 kilates"
+    listElement.innerHTML += `<jewel-card img="${valuePhoto}" title="${valueName}" collection="ORO 24 kilates"
     description="${valueDesc}"
-    price="${valuePrice}"></film-card>`
+    price="${valuePrice}"></jewel-card>`
 }
 
 
 addButton.addEventListener("click", handleAdd);
 
-function handleRemove (ev){
-    ev.preventDefault();
-    removeNew();
-}
 
-function removeNew (ev) {
-    ev.currentTarget.classList.toggle('selected');
-
-}
-container.addEventListener("click", handleRemove);

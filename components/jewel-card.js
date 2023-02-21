@@ -1,4 +1,4 @@
-class filmCard extends HTMLElement {
+class jewelCard extends HTMLElement {
     constructor() {
       super();
       this.attachShadow({ mode: "open" });
@@ -153,4 +153,4 @@ class filmCard extends HTMLElement {
       this.render();
     }
   }
-  customElements.define("film-card", filmCard);
+  customElements.define("jewel-card", jewelCard);
